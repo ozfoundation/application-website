@@ -61,7 +61,7 @@ jobs:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             default_bump: minor # only new application files are added by non-developers, so minor is probably more accurate
       - name: Create a GitHub release
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@v1.20.0
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
