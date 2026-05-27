@@ -42,7 +42,7 @@ jobs:
         run: tree
 
       - name: Build proof
-        uses: anishathalye/proof-html@v2.2.2
+        uses: anishathalye/proof-html@v2.2.3
         with:
           directory: ./
 
