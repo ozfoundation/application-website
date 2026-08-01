@@ -28,7 +28,7 @@ jobs:
         run: pdftotext files/oz-application.pdf files/application.txt
 
       - name: Spellcheck
-        uses: rojopolis/spellcheck-github-actions@0.49.0
+        uses: rojopolis/spellcheck-github-actions@0.63.0
         with:
           config_path: .github/spellcheck.yml
 
