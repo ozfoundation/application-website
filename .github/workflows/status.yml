@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v7.0.1
 
       - name: Checkout latest release
         run: |
@@ -43,7 +43,7 @@ jobs:
     if: failure()
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v7.0.1
       - name: Create Issue
         run: |
           gh issue create --title "Health Check Failed" --body "The downloaded webpage does not match the local index.html. Please investigate the issue." --assignee gdsmith1
